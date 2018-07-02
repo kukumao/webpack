@@ -15,7 +15,7 @@ Vue.use(Element);
 // 创建axios实例
 initAxios();
 init();
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
@@ -28,4 +28,4 @@ new Vue({
   components: { App },
   template: '<App/>'
   {{/if_eq}}
-})
+});
