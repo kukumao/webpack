@@ -74,12 +74,12 @@ module.exports = {
         },
       ],
     },
-    //路由
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
-    },
+    // //路由
+    // router: {
+    //   when: 'isNotTest',
+    //   type: 'confirm',
+    //   message: 'Install vue-router?',
+    // },
     // //lint校验
     // lint: {
     //   when: 'isNotTest',
