@@ -7,7 +7,9 @@ import 'normalize.css';// A modern alternative to CSS resets
 import Element from 'element-ui';
 import '@/assets/style/index.scss'; // global css
 import App from './App';
+{{#router}}
 import router from './router';
+{{/router}}
 import { initAxios } from '@/common/fetch';
 import { init } from '@/common/bus';
 // 使用element-ui
@@ -20,7 +22,9 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  {{#router}}
   router,
+  {{/router}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}

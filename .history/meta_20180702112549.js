@@ -171,8 +171,8 @@ module.exports = {
   },
   //根据命令行交互的结果过滤将要渲染的项目文件
   filters: {
-    // '.eslintrc.js': 'lint',
-    // '.eslintignore': 'lint',
+    '.eslintrc.js': 'lint',
+    '.eslintignore': 'lint',
     // 'config/test.env.js': 'unit || e2e',
     // 'build/webpack.test.conf.js': "unit && runner === 'karma'",
     // 'test/unit/**/*': 'unit',
