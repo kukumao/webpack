@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="font18" @click="handle">{{title}}</span>
+    <span class="font18" @click="handle">点我</span>
   </div>
 </template>
 <script>
@@ -10,7 +10,6 @@ export default {
   components: {},
   data() {
     return {
-      title: "我是列表,点我",
       platformList:[]
     };
   },
