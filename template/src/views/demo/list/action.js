@@ -21,7 +21,7 @@ const getAllPlatform = () => {
   });
 };
 const handle = () => {
-  _this.title = '点我干嘛';
+  console.log('点我干嘛');
 };
 
 export default {
