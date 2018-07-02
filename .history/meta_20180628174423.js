@@ -31,7 +31,7 @@ module.exports = {
       return templateVersion
     },
   },
-  //prompts为构建项目时要填写的选项
+  
   prompts: {
     //项目名
     name: {
@@ -74,41 +74,41 @@ module.exports = {
         },
       ],
     },
-    // //路由
-    // router: {
-    //   when: 'isNotTest',
-    //   type: 'confirm',
-    //   message: 'Install vue-router?',
-    // },
-    // //lint校验
-    // lint: {
-    //   when: 'isNotTest',
-    //   type: 'confirm',
-    //   message: 'Use ESLint to lint your code?',
-    // },
-    // //lint配置
-    // lintConfig: {
-    //   when: 'isNotTest && lint',
-    //   type: 'list',
-    //   message: 'Pick an ESLint preset',
-    //   choices: [
-    //     {
-    //       name: 'Standard (https://github.com/standard/standard)',
-    //       value: 'standard',
-    //       short: 'Standard',
-    //     },
-    //     {
-    //       name: 'Airbnb (https://github.com/airbnb/javascript)',
-    //       value: 'airbnb',
-    //       short: 'Airbnb',
-    //     },
-    //     {
-    //       name: 'none (configure it yourself)',
-    //       value: 'none',
-    //       short: 'none',
-    //     },
-    //   ],
-    // },
+    //路由
+    router: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install vue-router?',
+    },
+    //lint校验
+    lint: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Use ESLint to lint your code?',
+    },
+    //lint配置
+    lintConfig: {
+      when: 'isNotTest && lint',
+      type: 'list',
+      message: 'Pick an ESLint preset',
+      choices: [
+        {
+          name: 'Standard (https://github.com/standard/standard)',
+          value: 'standard',
+          short: 'Standard',
+        },
+        {
+          name: 'Airbnb (https://github.com/airbnb/javascript)',
+          value: 'airbnb',
+          short: 'Airbnb',
+        },
+        {
+          name: 'none (configure it yourself)',
+          value: 'none',
+          short: 'none',
+        },
+      ],
+    },
     //测试
     // unit: {
     //   when: 'isNotTest',
@@ -138,13 +138,11 @@ module.exports = {
     //     },
     //   ],
     // },
-    //测试
-    // e2e: {
-    //   when: 'isNotTest',
-    //   type: 'confirm',
-    //   message: 'Setup e2e tests with Nightwatch?',
-    // },
-    //用npm还是yarn安装
+    e2e: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Setup e2e tests with Nightwatch?',
+    },
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
@@ -169,20 +167,19 @@ module.exports = {
       ],
     },
   },
-  //根据命令行交互的结果过滤将要渲染的项目文件
   filters: {
-    // '.eslintrc.js': 'lint',
-    // '.eslintignore': 'lint',
-    // 'config/test.env.js': 'unit || e2e',
-    // 'build/webpack.test.conf.js': "unit && runner === 'karma'",
-    // 'test/unit/**/*': 'unit',
-    // 'test/unit/index.js': "unit && runner === 'karma'",
-    // 'test/unit/jest.conf.js': "unit && runner === 'jest'",
-    // 'test/unit/karma.conf.js': "unit && runner === 'karma'",
-    // 'test/unit/specs/index.js': "unit && runner === 'karma'",
-    // 'test/unit/setup.js': "unit && runner === 'jest'",
-    // 'test/e2e/**/*': 'e2e',
-    // 'src/router/**/*': 'router',
+    '.eslintrc.js': 'lint',
+    '.eslintignore': 'lint',
+    'config/test.env.js': 'unit || e2e',
+    'build/webpack.test.conf.js': "unit && runner === 'karma'",
+    'test/unit/**/*': 'unit',
+    'test/unit/index.js': "unit && runner === 'karma'",
+    'test/unit/jest.conf.js': "unit && runner === 'jest'",
+    'test/unit/karma.conf.js': "unit && runner === 'karma'",
+    'test/unit/specs/index.js': "unit && runner === 'karma'",
+    'test/unit/setup.js': "unit && runner === 'jest'",
+    'test/e2e/**/*': 'e2e',
+    'src/router/**/*': 'router',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

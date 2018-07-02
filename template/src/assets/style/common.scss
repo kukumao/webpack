@@ -1,0 +1,295 @@
+//滚动条
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 6px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 6px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+// 前缀为 gc（global class）
+.gc-wp10 {
+  width: 10%;
+}
+
+.gc-wp20 {
+  width: 20%;
+}
+
+.gc-wp30 {
+  width: 30%;
+}
+
+.gc-wp40 {
+  width: 40%;
+}
+
+.gc-wp50 {
+  width: 50%;
+}
+
+.gc-wp60 {
+  width: 60%;
+}
+
+.gc-wp70 {
+  width: 70%;
+}
+
+.gc-wp100 {
+  width: 100%;
+}
+
+.gc-w30 {
+  width: 30px;
+}
+
+.gc-w50 {
+  width: 50px;
+}
+
+.gc-w100 {
+  width: 100px;
+}
+
+.gc-w150 {
+  width: 150px;
+}
+
+.gc-w200 {
+  width: 200px;
+}
+
+.gc-w300 {
+  width: 300px;
+}
+
+.gc-w500 {
+  width: 500px;
+}
+
+.gc-h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.gc-h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.gc-h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.gc-h4 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.gc-h5 {
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.gc-btn {
+  font-size: 16px;
+}
+
+.gc-btn-t {
+  font-size: 16px;
+} // 文字按钮
+.gc-btn-s {
+  font-size: 14px;
+} // 小型按钮
+.gc-btn-m {
+  font-size: 12px;
+} // 超小型
+.gc-btn-b {
+  font-size: 18px;
+} // 大型
+.gc-mr5 {
+  margin-right: 5px;
+}
+
+.gc-mr10 {
+  margin-right: 10px;
+}
+
+.gc-mr20 {
+  margin-right: 20px;
+}
+
+.gc-mb5 {
+  margin-bottom: 5px;
+}
+
+.gc-mb10 {
+  margin-bottom: 10px;
+}
+
+.gc-mb20 {
+  margin-bottom: 20px;
+}
+
+.gc-mt5 {
+  margin-top: 5px;
+}
+
+.gc-mt10 {
+  margin-top: 10px;
+}
+
+.gc-bg_white {
+  background: #fff;
+}
+
+.gc-relative {
+  position: relative;
+}
+
+.gc-absolute {
+  position: absolute;
+}
+
+.gc-mt15 {
+  margin-top: 15px;
+}
+
+.gc-mt20 {
+  margin-top: 20px;
+}
+
+.gc-mt40 {
+  margin-top: 40px;
+}
+
+.gc-ml10 {
+  margin-left: 10px;
+}
+
+.gc-ml20 {
+  margin-left: 20px;
+}
+
+.gc-ml40 {
+  margin-left: 40px;
+}
+
+.gc-mt20 {
+  margin-top: 20px;
+}
+
+.gc-pl15 {
+  padding-left: 15px;
+}
+
+.gc-pr15 {
+  padding-right: 15px;
+}
+
+.gc-pl20 {
+  padding-left: 20px;
+}
+
+.gc-pb15 {
+  padding-bottom: 15px;
+}
+
+.gc-fr {
+  float: right;
+}
+
+.gc-fl {
+  float: left;
+}
+
+.gc-clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.gc-block {
+  display: block;
+}
+
+.gc-pointer {
+  cursor: pointer;
+}
+
+.gc-inline-block {
+  display: inline-block;
+}
+
+.gc-two-iol {
+  display: inline-block;
+  width: 49%;
+  margin: 5px auto;
+}
+
+// two-item-one-line一行两个输入项
+.gc-sparate-item {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    margin-bottom: 40px;
+  }
+}
+
+// 对表单进行分隔
+.gc-cursor-pointer {
+  cursor: pointer;
+}
+
+.gc-text-center {
+  text-align: center;
+}
+
+.gc-text-left {
+  text-align: left;
+}
+
+.gc-text-right {
+  text-align: right;
+}
+
+.gc-flex {
+  display: flex;
+  align-items: center;
+}
+
+.gc-no-padding {
+  padding: 0;
+}
+
+.gc-hidden {
+  display: none;
+}
