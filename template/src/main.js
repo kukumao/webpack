@@ -5,6 +5,7 @@
 import Vue from 'vue';
 import 'normalize.css';// A modern alternative to CSS resets
 import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/style/index.scss'; // global css
 import App from './App';
 import router from './router';
